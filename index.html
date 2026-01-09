@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monitor // Cockpit</title>
+    <link rel="manifest" href="manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -107,5 +108,16 @@
   <body class="bg-background-dark text-white selection:bg-primary selection:text-black">
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('./sw.js').then(function(registration) {
+          console.log('ServiceWorker registrado com sucesso: ', registration.scope);
+        }, function(err) {
+          console.log('Falha ao registrar o ServiceWorker: ', err);
+        });
+      });
+    }
+  </script>
 </body>
 </html>
