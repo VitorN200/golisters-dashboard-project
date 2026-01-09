@@ -1,0 +1,83 @@
+{
+  "dashboard": {
+    "financials": {
+      "netLiquidity": "$1,240,500.00",
+      "liquidityPools": 84,
+      "anchorPayout": "$45,200.00"
+    },
+    "wolfMetrics": {
+      "latency": 24,
+      "systemStatus": "NOMINAL",
+      "deadAirTime": "00:04:12",
+      "whaleCount": 8,
+      "lookupToPayerRatio": "340:1",
+      "pixSuccessRate": 98.5,
+      "anchorBurn": {
+        "accumulatedPayout": "$124k",
+        "dailyRevenue": "$210k"
+      }
+    },
+    "streams": [
+      {
+        "id": "1",
+        "name": "Streamer Alpha",
+        "status": "live",
+        "viewers": 4200,
+        "thumbnail": "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&q=80&w=1000",
+        "trapStatus": "Active",
+        "hookLevel": "High",
+        "signalQuality": "HD"
+      },
+      {
+        "id": "2",
+        "name": "Streamer Beta",
+        "status": "live",
+        "viewers": 3100,
+        "thumbnail": "https://images.unsplash.com/photo-1542204165-65bf26472b9b?auto=format&fit=crop&q=80&w=1000",
+        "trapStatus": "Active",
+        "hookLevel": "Med",
+        "signalQuality": "HD"
+      },
+      {
+        "id": "3",
+        "name": "Signal Lost",
+        "status": "dead",
+        "viewers": 0,
+        "thumbnail": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1000",
+        "trapStatus": "FAILED",
+        "hookLevel": "None",
+        "signalQuality": "Lost"
+      },
+      {
+        "id": "4",
+        "name": "Streamer Delta",
+        "status": "live",
+        "viewers": 2800,
+        "thumbnail": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=1000",
+        "trapStatus": "Active",
+        "hookLevel": "High",
+        "signalQuality": "HD"
+      },
+      {
+        "id": "5",
+        "name": "Streamer Echo",
+        "status": "live",
+        "viewers": 1500,
+        "thumbnail": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=1000",
+        "trapStatus": "Active",
+        "hookLevel": "Low",
+        "signalQuality": "SD"
+      },
+      {
+        "id": "6",
+        "name": "Streamer Foxtrot",
+        "status": "live",
+        "viewers": 3200,
+        "thumbnail": "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?auto=format&fit=crop&q=80&w=1000",
+        "trapStatus": "Active",
+        "hookLevel": "Med",
+        "signalQuality": "HD"
+      }
+    ]
+  }
+}
